@@ -1,84 +1,83 @@
-header{
-    height: 20vh;
-    width: 100vw;
-    background-color: rgb(161, 98, 98);
+header {
+  height: 20vh;
+  width: 100vw;
+  background-color: rgb(161, 98, 98);
 
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
-#playerIcon, #monsterIcon{
-    height: 15vh;
-    width: 7vw;
-    margin-right: 50px;
-    margin-left: 50px;
-    border-style: solid;
-    border-color: black;
-    box-shadow: orange;
-    box-shadow: 
-        0 0 8px rgba(255, 136, 0, 0.6),    /* glowing orange */
-        0 0 15px rgba(255, 136, 0, 0.6),   /* extended glow */
-        5px 5px 10px rgba(0, 0, 0, 0.8),   /* dark shadow */
-        -5px -5px 10px rgba(0, 0, 0, 0.5); /* opposite dark shadow */
-    background-color: #222;                 /* dark background */
-    color: #ff8800;                         /* orange text color */
-    padding: 2px;
-    border-radius: 3px;
-    transition: 0.3s ease-in-out;
+#playerIcon,
+#monsterIcon {
+  height: 15vh;
+  width: 7vw;
+  margin-right: 50px;
+  margin-left: 50px;
+  border-style: solid;
+  border-color: black;
+  box-shadow: orange;
+  box-shadow: 0 0 8px rgba(255, 136, 0, 0.6),
+    /* glowing orange */ 0 0 15px rgba(255, 136, 0, 0.6),
+    /* extended glow */ 5px 5px 10px rgba(0, 0, 0, 0.8),
+    /* dark shadow */ -5px -5px 10px rgba(0, 0, 0, 0.5); /* opposite dark shadow */
+  background-color: #222; /* dark background */
+  color: #ff8800; /* orange text color */
+  padding: 2px;
+  border-radius: 3px;
+  transition: 0.3s ease-in-out;
 }
-main{
-    display: flex;
+main {
+  display: flex;
 }
-#leftSide{
-    width: 50vw;
-    height: 76vh;
-    background-color: #ff8800;
+#leftSide {
+  width: 50vw;
+  height: 76vh;
+  background-color: #ff8800;
 }
-#rightSide{
-    width: 50vw;
-    height: 76vh;
-    background-color: #477433;
+#rightSide {
+  width: 50vw;
+  height: 76vh;
+  background-color: #477433;
 
-    display: flex;
+  display: flex;
 
-    justify-content: center;
-    align-items: center;
-    align-content: center;    
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
-.cards{
-    height: 200px;
-    width: 200px;
-   /*background-color: black;*/ 
-    
-    margin: 20px;
-    margin-left: 200px ;
-    cursor: pointer;
-    transition: transform 1s;
+.cards {
+  height: 200px;
+  width: 200px;
+  /*background-color: black;*/
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.cards:hover{
-    transform: rotate(5deg) scale(1.1);
-}
-.cards img{
-    display: flex;
-    text-align: center;
-}
-img[src="img/Rock2.png"]{
-    width: 65%;
-    height: 80%;
-}
-img[src="img/Paper2.png"]{
-    margin-left: 100px;
-}
+  margin: 20px;
+  margin-left: 200px;
+  cursor: pointer;
+  transition: transform 1s;
 
-#cardEnemy{
-    height: 200px;
-    width: 200px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards:hover {
+  transform: rotate(5deg) scale(1.1);
+}
+.cards img {
+  display: flex;
+  text-align: center;
+}
+img[src="img/Rock2.png"] {
+  width: 65%;
+  height: 80%;
+}
+img[src="img/Paper2.png"] {
+  margin-left: 100px;
 }
 
+#cardEnemy {
+  height: 200px;
+  width: 200px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
