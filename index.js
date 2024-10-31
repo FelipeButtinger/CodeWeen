@@ -6,7 +6,7 @@ let vidas = 3;
 let vidasMonstro = 3;
 
 rockCard.addEventListener("click", function () {
-  play("scissors");
+  play("rock ");
 });
 paperCard.addEventListener("click", function () {
   play("paper");
@@ -46,6 +46,12 @@ function animation() {
   }, 5300);
 }
 
+function computadorEscolha() {
+  const escolhas = ["rock", "paper", "scissors"];
+  const randomIndex = Math.floor(Math.random() * escolhas.length);
+  return escolhas[randomIndex];
+}
+
 function play(choose) {
   rock.style.opacity = 0;
   rock.style.cursor = "default";
@@ -58,8 +64,46 @@ function play(choose) {
 
   animation();
 
-  setTimeout(function(){
-
-  },5000)
+  setTimeout(function () {
+    const escolhaComputador = computadorEscolha();
+    determinarVencedor(choose, escolhaComputador);
+  }, 5000);
 }
+
 function game() {}
+function determinarVencedor(jogador, computador) {
+  let resultado = "";
+
+  if (jogador === computador) {
+    resultado = "Empate!";
+    console.log(resultado);
+  } else if (
+    (jogador === "rock" && computador === "scissors") ||
+    (jogador === "paper" && computador === "rock") ||
+    (jogador === "scissors" && computador === "paper")
+  ) {
+    resultado = "Você ganhou!";
+    console.log(resultado);
+    vidasMonstro--;
+    console.log(`vidas monstro ${vidasMonstro}`);
+  } else {
+    resultado = "Você perdeu!";
+    console.log(resultado);
+    vidas--;
+    console.log(`vidas ${vidas}`);
+  }
+
+  // Atualiza o display de resultados e vidas
+  resultadoDisplay.textContent = resultado;
+  vidasDisplay.textContent = `Vidas: ${vidas}`;
+  vidasMonstroDisplay.textContent = `Vidas do Monstro: ${vidasMonstro}`;
+
+  // Verifica se alguém perdeu todas as vidas
+  if (vidas === 0) {
+    alert("Você perdeu todas as vidas! Fim de jogo.");
+    resetarJogo();
+  } else if (vidasMonstro === 0) {
+    alert("Você derrotou o monstro! Parabéns!");
+    resetarJogo();
+  }
+}
