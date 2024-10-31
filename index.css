@@ -1,7 +1,12 @@
+body{
+  background-image: url(img/background.png);
+  background-size: cover;
+}
+
 header {
   height: 20vh;
   width: 100vw;
-  background-color: rgb(161, 98, 98);
+  
 
   display: flex;
   justify-content: space-between;
@@ -31,12 +36,12 @@ main {
 #leftSide {
   width: 50vw;
   height: 76vh;
-  background-color: #ff8800;
+  
 }
 #rightSide {
   width: 50vw;
   height: 76vh;
-  background-color: #477433;
+  
 
   display: flex;
 
@@ -80,4 +85,29 @@ img[src="img/Paper2.png"] {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+#gameOverOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(img/jumpscare.png);
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease;
+}
+
+#gameOverOverlay.show {
+  opacity: 1;
+  visibility: visible;
 }
