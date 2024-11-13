@@ -1,0 +1,63 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f7f9fc; /* Fundo mais suave */
+    color: #333; /* Cor de texto mais escura */
+}
+
+h1 {
+    margin: 20px 0;
+    color: #4CAF50; /* Cor do título */
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#leaderboardTable {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border-radius: 10px; /* Bordas arredondadas */
+    overflow: hidden; /* Para bordas arredondadas funcionarem */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#leaderboardTable th, #leaderboardTable td {
+    border: 1px solid #ddd;
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#leaderboardTable th {
+    background-color: #4CAF50; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto no cabeçalho */
+    text-transform: uppercase; /* Transformar texto em maiúsculo */
+}
+
+#leaderboardTable td {
+    background-color: #fff; /* Fundo branco para as células */
+}
+
+#leaderboardTable tr:nth-child(even) td {
+    background-color: #f9f9f9; /* Cor alternada para linhas */
+}
+
+#leaderboardTable tr:hover td {
+    background-color: #f1f1f1; /* Efeito de hover nas linhas */
+}
+
+button {
+    padding: 12px 25px;
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Cor do botão */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas do botão */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049; /* Cor de hover para o botão */
+}
