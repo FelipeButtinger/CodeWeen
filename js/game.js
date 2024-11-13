@@ -66,17 +66,17 @@ function animation(choose) {
 
   if(choose == "paper"){
     setTimeout(function () {
-      paperCard.src = "img/Paper2.png";
+      paperCard.src = "../img/Paper2.png";
       paperCard.style.pointerEvents = "auto";
     }, 5300);
   }else if(choose == "scissors"){
     setTimeout(function () {
-      paperCard.src = "img/Scissors2.png";
+      paperCard.src = "../img/Scissors2.png";
       paperCard.style.pointerEvents = "auto";
     }, 5300);
   }else if(choose == "rock"){
     setTimeout(function () {
-      paperCard.src = "img/Rock2.png";
+      paperCard.src = "../img/Rock2.png";
       paperCard.style.pointerEvents = "auto";
     }, 5300);
   }
@@ -98,7 +98,7 @@ function play(choose) {
   scissors.style.opacity = 0;
   scissors.style.cursor = "default";
 
-  paperCard.src = "img/Rock2.png";
+  paperCard.src = "../img/Rock2.png";
   paperCard.style.cursor = "default";
 
   animation(choose);
@@ -108,11 +108,11 @@ function play(choose) {
     console.log(escolhaComputador);
 
     if(escolhaComputador == "rock"){
-      monster.src = "img/gargula.png"
+      monster.src = "../img/gargula.png"
     }else if(escolhaComputador == "scissors"){
-       monster.src = "img/claw.png"
+       monster.src = "../img/claw.png"
     }else if(escolhaComputador == "paper"){
-       monster.src = "img/scroll.png"
+       monster.src = "../img/scroll.png"
     }
     determinarVencedor(choose, escolhaComputador);
   }, 5000);
@@ -163,13 +163,13 @@ function monsterTakeDamage(){
   vidasMonstro--
   if(vidasMonstro==2){
     const primeiraVida = document.getElementById("monsterHeart1");
-    primeiraVida.src = "img/heart2.png"
+    primeiraVida.src = "../img/heart2.png"
   }else if(vidasMonstro == 1){
     const segundaVida = document.getElementById("monsterHeart2");
-    segundaVida.src = "img/heart2.png"
+    segundaVida.src = "../img/heart2.png"
   }else if(vidasMonstro == 0){
      const terceiraVida = document.getElementById("monsterHeart3");
-    terceiraVida.src = "img/heart2.png"
+    terceiraVida.src = "../img/heart2.png"
   }
 }
 
@@ -177,13 +177,13 @@ function takeDamage(){
   vidas--
   if(vidas==2){
     const primeiraVida = document.getElementById("playerHeart3");
-    primeiraVida.src = "img/heart2.png"
+    primeiraVida.src = "../img/heart2.png"
   }else if(vidas == 1){
     const segundaVida = document.getElementById("playerHeart2");
-    segundaVida.src = "img/heart2.png"
+    segundaVida.src = "../img/heart2.png"
   }else if(vidas == 0){
      const terceiraVida = document.getElementById("playerHeart1");
-    terceiraVida.src = "img/heart2.png"
+    terceiraVida.src = "../img/heart2.png"
   }
 }
 function gameReset(){
@@ -193,8 +193,8 @@ function gameReset(){
   scissors.style.opacity = 1;
   scissors.style.cursor = "pointer";
 
-  paperCard.src = "img/Paper2.png";
+  paperCard.src = "../img/Paper2.png";
   paperCard.style.cursor = "pointer";
 
-  monster.src = "img/monsterHand.png"
+  monster.src = "../img/monsterHand.png"
 }
