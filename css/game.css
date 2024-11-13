@@ -1,5 +1,5 @@
 body{
-  background-image: url(img/background.png);
+  background-image: url(../img/background.png);
   background-size: cover;
 }
 
@@ -94,7 +94,7 @@ img[src="img/Paper2.png"] {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url(img/jumpscare.png);
+  background-image: url(../img/jumpscare.png);
   background-size: cover;
   color: white;
   display: flex;
