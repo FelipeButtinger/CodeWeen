@@ -40,7 +40,7 @@ defeats INT DEFAULT 0
 ## How to play and rules:
 every round you choose on of three option, Rock, Paper or Scissors.
 folowing rules:
-<div aling=center>
+<div>
 <img width=415 src="![image](https://github.com/user-attachments/assets/89b2d19f-1dc4-42c6-adc4-e8a6ec4ff378)"/>
 </div>
 
