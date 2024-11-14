@@ -1,4 +1,4 @@
-###ROCK, ###PAPER, ###SCISSORS
+### ROCK, ### PAPER, ### SCISSORS
 
 Our game is a horrifying rock,paper, scissors game, be cautelous, because losing will turn the thing down! this game will challenge your luck and bravery, good luck.
 
